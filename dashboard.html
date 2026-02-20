@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <header>
+        <h2>Panel del Administrador</h2>
+        <button onclick="logout()">Cerrar Sesión</button>
+    </header>
+
+    <section class="card">
+        <h3>Registrar Alumno</h3>
+        <input type="text" id="nombreAlumno" placeholder="Nombre del alumno">
+        <button onclick="agregarAlumno()">Agregar</button>
+    </section>
+
+    <section class="card">
+        <h3>Control de Asistencias</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Asistencia</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody id="tablaAlumnos"></tbody>
+        </table>
+    </section>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
